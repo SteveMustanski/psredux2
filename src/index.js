@@ -1,7 +1,7 @@
 import React from "react";
 import { render } from "react-dom";
 
-function hi() {
+function Hi() {
   return <p>Hi!</p>;
 }
 
