@@ -30,7 +30,22 @@ function ManageCoursePage({
     }
   }, []); //second arg tells useEfect what to watch.  Empty mean to only run once
 
-  return <CourseForm course={course} errors={errors} authors={authors} />;
+  function handleChange(event) {
+    const { name, value } = event.target;
+    setCourse(prevCourse => ({
+      ...prevCourse,
+      [name]: name === "authorId" ? parseInt(value, 10) : value
+    }));
+  }
+
+  return (
+    <CourseForm
+      course={course}
+      errors={errors}
+      authors={authors}
+      onChange={handleChange}
+    />
+  );
 }
 
 ManageCoursePage.propTypes = {
