@@ -5,3 +5,9 @@ export const LOAD_COURSES_SUCCESS = "LOAD_COURSES_SUCCESS";
 export const LOAD_AUTHORS_SUCCESS = "LOAD_AUTHORS_SUCCESS";
 export const BEGIN_API_CALL = "BEGIN_API_CALL";
 export const API_CALL_ERROR = "API_CALL_ERROR";
+
+// success actions are assumed to be a completed call.  using optimisic for delete
+// so that the api call count doesnt get decremented beblow zero and so the record
+// is removed from ui before call is completed.
+
+export const DELETE_COURSE_OPTIMISTIC = "DELETE_COURSE_OPTIMISTIC";
