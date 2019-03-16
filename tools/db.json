@@ -65,26 +65,18 @@
     },
     {
       "id": 10,
-      "title": "Web Component Fundamentals",
+      "title": "Web Component Fundamentals II",
       "slug": "web-components-shadow-dom",
       "authorId": 1,
       "category": "HTML5"
     },
     {
       "id": 11,
-      "title": "react",
+      "title": "new course",
       "authorId": 1,
-      "category": "5",
-      "createdAt": 1552683278180,
-      "slug": "react"
-    },
-    {
-      "id": 12,
-      "title": "new",
-      "authorId": 1,
-      "category": "new",
-      "createdAt": 1552683317569,
-      "slug": "new"
+      "category": "test",
+      "createdAt": 1552706259642,
+      "slug": "new-course"
     }
   ],
   "authors": [
